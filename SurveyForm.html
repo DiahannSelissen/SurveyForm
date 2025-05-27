@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-box">
+        <h1 id="title">
+            Recruiter Feedback Form
+        </h1>
+        <p id="description">
+            Thank you for taking the time to provide feedback. Your insights help me improve as a candidate and professional.
+        </p>
+        
+        <form id="survey-form">
+            <div class="information">
+            <label id="name-label" for="name">Name
+                <input id="name" type="text" placeholder="Please enter your name">
+            </label>
+            <label id="email-label" for="email">Email
+                <input id="email" type="text" placeholder="Please enter your email">
+            </label>
+            <label id="company-label" for="company">What company do you work for?
+                <input id="company" type="text" placeholder="Please enter your company name">
+            </label>
+            <label id="number-label" for="number">How many years of experience do you 
+                have in your current role?
+                <input id="number" type="number" min="0" max="100" placeholder="Years of experience">
+            </label>
+            <label id="down-occupation">What is your current position?
+                <select id="dropdown">
+                    <option value="Select a position">
+                        Select a position
+                    </option>
+                    <option value="hr-manager">
+                        HR Manager
+                    </option>
+                    <option value="recruiter">
+                        Recruiter
+                    </option>
+                    <option value="talent-acquisition">
+                        Talent Acquisition Specialist
+                    </option>
+                    <option value="other">
+                        Other
+                    </option>
+                </select>
+            </label>
+            </div>
+            <fieldset>
+            <legend> Would you consider me for a position on your team?</legend>
+                <input type="radio" name="hire" value="yes" required>Yes
+                <input type="radio" name="hire" value="maybe">Maybe
+                <input type="radio" name="hire" value="no">No
+            </fieldset>
+            <fieldset>
+            <legend> Which programming languages should I learn? (Select all that apply)</legend>
+                <input type="checkbox" value="html" required>HTML
+                <input type="checkbox" value="css">CSS
+                <input type="checkbox" value="javascript">Javascript
+                <input type="checkbox" value="react">React
+                <input type="checkbox" value="typescript">TypeScript
+                <input type="checkbox" value="wordpress">Wordpress
+                <input type="text" placeholder="Fill in which other languages"> 
+            </fieldset>
+            <div class="comment-section">
+            <Legend>Additional Comments</Legend>
+                <textarea name="comments"></textarea>
+            </div>
+            <input type="submit" id="submit" value="Submit">
+            </form>
+            </div>
+</body>
+</html>
